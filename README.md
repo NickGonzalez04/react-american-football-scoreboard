@@ -35,13 +35,13 @@ Follow these steps for completing your project.
 
 ## Minimum Viable Product
 
-1. Hold each team's current score in a state value
-1. Render each team's current score that is in state to the DOM.
-1. Be able to click the different buttons to increment the appropriate team's score by the correct amount
+1. [ ] Hold each team's current score in a state value
+1. [ ] Render each team's current score that is in state to the DOM.
+1. [ ] Be able to click the different buttons to increment the appropriate team's score by the correct amount
 
 ### STEP 1 & 2 - Adding Team Scores to the Component's State
 
-- Import the `useState` hook
+- [X] Import the `useState` hook
 - Set up the state values for the Lions team score using the state hook
 
 ```js
