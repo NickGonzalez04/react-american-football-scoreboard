@@ -2,6 +2,7 @@
 import React, {useState} from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
+import Timer from "./Scoreboard.js";
 
 function App() {
 
@@ -12,7 +13,8 @@ const [homeScore, setHomeScore] = useState(0);
 // Away score and SetScore
 const [awayScore, setAwayScore] = useState(0);
 
-const [clock, setClock] = useState('00:00');
+
+
   return (
     <div className="container">
       <section className="scoreboard">
@@ -24,7 +26,7 @@ const [clock, setClock] = useState('00:00');
 
             <div className="home__score">{homeScore}</div>
           </div>
-          <div className="timer">{clock}</div>
+          <Timer/>
           <div className="away">
             <h2 className="away__name">Tigers</h2>
             <div className="away__score">{awayScore}</div>
