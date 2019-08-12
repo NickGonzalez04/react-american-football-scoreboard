@@ -12,8 +12,7 @@ const [homeScore, setHomeScore] = useState(0);
 // Away score and SetScore
 const [awayScore, setAwayScore] = useState(0);
 
-
-// const [goalHomeScore, setGoalHomeScore] = useState(0);
+const [clock, setClock] = useState('00:00');
   return (
     <div className="container">
       <section className="scoreboard">
@@ -25,7 +24,7 @@ const [awayScore, setAwayScore] = useState(0);
 
             <div className="home__score">{homeScore}</div>
           </div>
-          <div className="timer">00:03</div>
+          <div className="timer">{clock}</div>
           <div className="away">
             <h2 className="away__name">Tigers</h2>
             <div className="away__score">{awayScore}</div>
@@ -34,6 +33,12 @@ const [awayScore, setAwayScore] = useState(0);
         <BottomRow />
       </section>
       <section className="buttons">
+         <div className="timerButton">
+            <button className="Game_Clock">First Quarter</button>
+            <button className="Game_Clock">Second Quarter</button>
+            <button className="Game_Clock">Third Quarter</button>
+            <button className="Game_Clock">Fourth Quarter</button>
+          </div>
         <div className="homeButtons">
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
           <button className="homeButtons__touchdown" onClick={()=> setHomeScore(homeScore + 7)}>Home Touchdown</button>
