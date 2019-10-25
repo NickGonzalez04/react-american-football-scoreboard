@@ -16,15 +16,15 @@ In this project, you build an app that diplays a scoreboard for an american foot
 
 ## Project Set Up
 
-- [ ] Create a forked copy of this project.
+- [X] Create a forked copy of this project.
 - [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal
-- [ ] CD into the project base directory `cd american-football-scoreboard`
-- [ ] Download project dependencies by running one of these two commands `yarn` or `npm install`
-- [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] Clone your OWN version of the repository in your terminal
+- [X] CD into the project base directory `cd american-football-scoreboard`
+- [X] Download project dependencies by running one of these two commands `yarn` or `npm install`
+- [X] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [X] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
@@ -35,13 +35,13 @@ Follow these steps for completing your project.
 
 ## Minimum Viable Product
 
-1. Hold each team's current score in a state value
-1. Render each team's current score that is in state to the DOM.
-1. Be able to click the different buttons to increment the appropriate team's score by the correct amount
+1. [X] Hold each team's current score in a state value
+1. [X] Render each team's current score that is in state to the DOM.
+1. [X] Be able to click the different buttons to increment the appropriate team's score by the correct amount
 
 ### STEP 1 & 2 - Adding Team Scores to the Component's State
 
-- Import the `useState` hook
+- [X] Import the `useState` hook
 - Set up the state values for the Lions team score using the state hook
 
 ```js
@@ -51,13 +51,13 @@ const [value, setValue] = useState(); // Give these better names, and decide whe
 - Set up the state value for the Tigers team score using a second state hook call
 
 ### STEP 3 - Render the Scores to the DOM
-
+[X]
 - The scores in the JSX are currently hardcoded to 32 points each. Remove the hardcoded values
 - Render the state values from what we just set up in steps 1 and 2
 - Play around with different initial values to test if they are rendering on the DOM correctly
 
 ### STEP 4 - Add Click Functionality to Increment the Scores
-
+[X]
 - Add the `onClick` handler to each function
 - Determine how much you will need to increment the score for each button
   - A touchdown is worth 7 points (assume the following extra point is made)
